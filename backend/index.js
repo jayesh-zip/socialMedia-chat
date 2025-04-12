@@ -8,9 +8,11 @@ import postRoute from "./routes/post.route.js";
 import messageRoute from "./routes/message.route.js";
 import { app, server } from "./socket/socket.js";
 import path from "path";
+import job from "./corn/corn.js";
+
  
 dotenv.config();
-
+job.start();
 
 const PORT = process.env.PORT || 3000;
 
